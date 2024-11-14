@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang di Update ESP32</title>
+    <style>
+        /* Desain Latar Belakang */
+        body {
+            background-color: #121212;
+            color: #00FF41;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Desain header */
+        h1 {
+            font-size: 3em;
+            margin-top: 100px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 30px #00FF41;
+        }
+
+        /* Animasi digital */
+        .blinking {
+            animation: blink 1s step-start 0s infinite;
+        }
+
+        /* Animasi kedip */
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Desain kontainer */
+        .container {
+            position: relative;
+            display: inline-block;
+            padding: 20px;
+            margin-top: 50px;
+            border: 2px solid #00FF41;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .container:before {
+            content: "⚡";
+            font-size: 50px;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+        }
+
+        /* Efek garis teknologi */
+        .tech-lines {
+            border-top: 1px dashed #00FF41;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .tech-lines span {
+            padding: 0 10px;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #00FF41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang di Update ESP32</h1>
+        <div class="tech-lines"><span class="blinking">101010101010</span></div>
+        <p class="blinking">Memuat data... Sistem dalam proses pembaruan.</p>
+        <div class="tech-lines"><span class="blinking">101010101010</span></div>
+    </div>
+</body>
+</html>
