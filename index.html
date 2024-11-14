@@ -75,18 +75,76 @@
             font-family: 'Courier New', Courier, monospace;
             color: #00FF41;
         }
+
+        .cta-container {
+      text-align: center;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.7); /* Transparansi untuk tampilan lebih dramatis */
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      color: white;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .cta-container h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #00FF00; /* Warna hijau neon ala elektronik */
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    }
+
+    .cta-container p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #B0B0B0;
+    }
+
+    .cta-button {
+      background-color: #00FF00; /* Hijau neon */
+      color: black;
+      font-size: 1.5em;
+      padding: 15px 30px;
+      border: 2px solid #00FF00;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+    }
+
+    .cta-button:hover {
+      background-color: black;
+      color: #00FF00;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+    }
+
+    /* Animasi shimmer pada button */
+    .cta-button:active {
+      animation: shimmer 1s linear infinite;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -200%; }
+      100% { background-position: 200%; }
+    }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Selamat Datang di Update ESP32</h1>
-        <a href="firmware.json"> cek update </a>
+        
         <div class="tech-lines"><span class="blinking">101010101010</span></div>
         <p class="blinking">Memuat data... Sistem dalam proses pembaruan.</p>
         <div class="tech-lines"><span class="blinking">101010101010</span></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+   <div class="cta-container">
+    <h1>Masuki Dunia Elektronika!</h1>
+    <p>Temukan solusi terbaik untuk proyek-proyek elektronikmu dengan ESP32 dan teknologi terkini. Mulai sekarang!</p>
+    <button class="cta-button" onclick="window.location.href='https://www.example.com'">Mulai Sekarang</button>
+  </div>
 </body>
 </html>
